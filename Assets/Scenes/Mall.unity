@@ -1665,7 +1665,7 @@ GameObject:
   - component: {fileID: 767947203}
   - component: {fileID: 767947206}
   - component: {fileID: 767947205}
-  - component: {fileID: 767947204}
+  - component: {fileID: 767947207}
   m_Layer: 0
   m_Name: Wheelchair_Agent
   m_TagString: Untagged
@@ -1689,19 +1689,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 185.7, z: 0}
---- !u!114 &767947204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 767947202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332cf5a1d669f48a5850946a9e1ae5c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 783695659}
 --- !u!195 &767947205
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1740,6 +1727,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &767947207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767947202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d72e0f03d14f44a3ea7b0db090d55b0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 783695659}
 --- !u!1 &777664706
 GameObject:
   m_ObjectHideFlags: 0
