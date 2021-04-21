@@ -23,11 +23,18 @@ public class GameManager : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision)
     {
-        if (gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-            count = count + 1;
-            CollisionCountText();
+            //count = count + 1;
+            //CollisionCountText();
+            Evaccountcount = Evaccountcount + 1;
+            EvaccountText.text = "Evacuation: " + Evaccountcount.ToString();
         }
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        count = count + 1;
+        CollisionCountText();
     }
 
     void CollisionCountText()

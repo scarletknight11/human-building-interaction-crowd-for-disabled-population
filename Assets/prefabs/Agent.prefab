@@ -288,6 +288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  agentevac: {fileID: 7305748791286365709}
 --- !u!195 &7305091307819619345
 NavMeshAgent:
   m_ObjectHideFlags: 0
