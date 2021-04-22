@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wall
+  - goal
+  - Marker
+  - wall
+  - Handicapped
   layers:
   - Default
   - TransparentFX
