@@ -9,8 +9,6 @@ public class GameManager : MonoBehaviour {
     public int Evaccountcount;
     public Text EvaccountText;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -19,14 +17,10 @@ public class GameManager : MonoBehaviour {
         EvaccountText.text = "Evacuation: ";
     }
 
- 
-
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            //count = count + 1;
-            //CollisionCountText();
             Evaccountcount = Evaccountcount + 1;
             EvaccountText.text = "Evacuation: " + Evaccountcount.ToString();
         }
