@@ -5,35 +5,30 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
-    public int count;
     public int Evaccountcount;
     public Text EvaccountText;
+    public Text HandicapText;
+
+    public GameObject finish;
+    private Handicappedmanager Handicapped;
 
     // Start is called before the first frame update
     void Start()
     {
-        count = 0;
         Evaccountcount = 0;
         EvaccountText.text = "Evacuation: ";
+
+        Handicapped = finish.GetComponent<Handicappedmanager>();
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            Evaccountcount = Evaccountcount + 1;
-            EvaccountText.text = "Evacuation: " + Evaccountcount.ToString();
-        }
-    }
     void OnTriggerEnter(Collider other)
     {
-        count = count + 1;
-        CollisionCountText();
-    }
-
-    void CollisionCountText()
-    {
-        Evaccountcount = Evaccountcount + 1;
+        Evaccountcount++;
         EvaccountText.text = "Evacuation: " + Evaccountcount.ToString();
+
+        if (other.gameObject.tag == "Handicapped") {
+            Handicapped.Handicapcount++;
+            HandicapText.text = "Handicapped: " + Handicapped.Handicapcount.ToString();
+        }
     }
 }

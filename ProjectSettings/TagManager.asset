@@ -9,6 +9,7 @@ TagManager:
   - Marker
   - wall
   - Handicapped
+  - Impaired
   layers:
   - Default
   - TransparentFX
