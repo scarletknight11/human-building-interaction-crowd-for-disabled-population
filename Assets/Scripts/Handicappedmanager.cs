@@ -5,40 +5,31 @@ using UnityEngine.UI;
 
 public class Handicappedmanager : MonoBehaviour {
 
-    public int count;
     public int Handicapcount;
     public Text HandicapText;
+    public Text EvaccountText;
+
+    public GameObject plane;
+    private GameManager Evaccount;
 
     // Start is called before the first frame update
     void Start()
     {
-        count = 0;
         Handicapcount = 0;
         HandicapText.text = "Handicapped: ";
+
+        Evaccount = plane.GetComponent<GameManager>();
     }
 
-    //void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.gameObject.tag == "Handicapped")
-    //    {
-    //        Handicapcount = Handicapcount + 1;
-    //        HandicapText.text = "Handicapped: " + HandicapText.ToString();
-    //    }
-    //}
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Handicapped")
         {
-            Handicapcount = Handicapcount + 1;
-            HandicapText.text = "Handicapped: " + HandicapText.ToString();
-            count = count + 1;
-            CollisionCountText();
-        }
-    }
+            Handicapcount++;
+            Evaccount.Evaccountcount++;
 
-    void CollisionCountText()
-    {
-        Handicapcount = Handicapcount + 1;
-        HandicapText.text = "Handicapped: " + HandicapText.ToString();
+            HandicapText.text = "Handicapped: " + Handicapcount.ToString();
+            EvaccountText.text = "Evacuation: " + Evaccount.Evaccountcount.ToString();
+        }
     }
 }
