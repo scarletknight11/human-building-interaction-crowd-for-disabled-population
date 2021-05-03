@@ -14,7 +14,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/itseez3d/avatar_sdk/samples_cloud/05_parameters_sample_cloud/scenes/05_parameters_sample_cloud.unity
     guid: 45ceaeafeb036d242b5453f1ab34bfa4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Mall_Small_Ramp_Scene/mall_small_ramp_sim_1-0.unity
     guid: 85b60f305138b3b4f9c21b1d68c79324
+  - enabled: 0
+    path: Assets/Scenes/Mall.unity
+    guid: 6161cc20f83404a099a5ec744229c318
+  - enabled: 0
+    path: Assets/Scenes/Mall_Small_Ramp_Scene/mall_small_ramp_sim_0-1.unity
+    guid: a03f2b4f2eaa8174597c548a223e124d
+  - enabled: 1
+    path: Assets/Scenes/Mall_Large_Ramp_Scene/mall_large_ramp_sim_blank.unity
+    guid: 6ecaff9b79a9e004bb48abb73baf1218
   m_configObjects: {}

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Mall_Small_Ramp_Scene/mall_small_ramp_sim_1-0.unity
+- path: Assets/Scenes/Mall_Large_Ramp_Scene/mall_large_ramp_sim_blank.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
